@@ -53,8 +53,8 @@
       margin-right: 0;
     }
 
-    /* --- Level Icons (FIXED & Restored) --- */
-    .level-container li::before { content: "⭐"; } /* Default */
+    /* --- Player Level Icons --- */
+    .level-container li::before { content: "⭐"; }
     .level30 li::before { content: "🔥"; }
     .level29 li::before { content: "⚔️"; }
     .level28 li::before { content: "🛡️"; }
@@ -87,7 +87,7 @@
       font-size: 13px;
       padding: 6px 10px;
       margin: 4px 0;
-      border-right: 4px solid #ffd700; /* Team list styling */
+      border-right: 4px solid #ffd700; /* Team list style */
       border-left: none;
     }
     .team li::before {
@@ -106,7 +106,7 @@
       border: 1px solid #555;
     }
     
-    /* Hero Section Styles (Static) */
+    /* Hero Section Styles (Static Explanation) */
     .hero-section {
       background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
       border-radius: 15px;
@@ -114,22 +114,96 @@
       margin: 30px 0;
       border: 2px solid #ffd700;
     }
-    /* ... (rest of static hero guide CSS) ... */
-
-    /* Helper classes for dynamic background/color (FIXED) */
-    .color-ff6b6b { background: #ff6b6b; color: #fff; }
-    .color-4ecdc4 { background: #4ecdc4; color: #fff; }
-    .color-ffe66d { background: #ffe66d; color: #1e1e2f; }
-    .color-a8e6cf { background: #a8e6cf; color: #1e1e2f; }
-    .color-c7ceea { background: #c7ceea; color: #1e1e2f; }
-
+    .hero-formations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .hero-card {
+      background: linear-gradient(135deg, #3a3a4e 0%, #2a2a3e 100%);
+      border-radius: 12px;
+      padding: 20px;
+      border: 2px solid;
+      transition: transform 0.3s;
+    }
+    .hero-card:hover {
+      transform: translateY(-5px);
+    }
+    .hero-list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+    
+    /* --- HERO GUIDE RTL FIXES APPLIED HERE --- */
+    .hero-list li {
+      background: #2e2e3e;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-right: 4px solid; /* FIXED: Use border-right for RTL accent */
+      border-left: none; /* Ensure no border on left */
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-card.garrison .hero-list li { border-right-color: #4ecdc4; } /* FIXED */
+    .hero-card.attack .hero-list li { border-right-color: #ff6b6b; } /* FIXED */
+    .hero-card.special .hero-list li { border-right-color: #ffd700; } /* FIXED */
+    
+    .hero-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      border: 2px solid #ffd700;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .hero-note {
+      background: #1e1e2e;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #a8a8b8;
+      border-right: 3px solid #ffd700; /* RTL adjustment */
+      border-left: none;
+      line-height: 1.6;
+    }
+    .math-formula {
+      background: #1a1a2a;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: #4ecdc4;
+      margin: 15px 0;
+      border: 1px solid #4ecdc4;
+    }
+    .info-box {
+      background: #2a2a3e;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-right: 4px solid #ffd700; /* RTL adjustment */
+      border-left: none;
+    }
+    
     /* Toggle & Visibility */
     .scenario-toggle { text-align: center; margin: 30px 0; background: #2a2a3e; padding: 15px; border-radius: 15px; border: 1px solid #444; }
     .scenario-toggle button { background: #444; color: #ccc; border: none; padding: 12px 30px; margin: 0 10px; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: bold; transition: all 0.3s; }
     .scenario-toggle button.active { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; box-shadow: 0 0 15px rgba(245, 87, 108, 0.5); }
     .scenario { display: none; animation: fadeIn 0.5s ease-in-out; }
     .scenario.active { display: block; }
-
+    
+    /* Helper classes for dynamic background/color */
+    .color-ff6b6b { background: #ff6b6b; color: #fff; }
+    .color-4ecdc4 { background: #4ecdc4; color: #fff; }
+    .color-ffe66d { background: #ffe66d; color: #1e1e2f; }
+    .color-a8e6cf { background: #a8e6cf; color: #1e1e2f; }
+    .color-c7ceea { background: #c7ceea; color: #1e1e2f; }
   </style>
 </head>
 <body>
@@ -159,8 +233,62 @@
     <strong>SkillMod Formula:</strong><br>
     SkillMod = (DamageUp × OppDefenseDown) / (OppDamageDown × DefenseUp)
   </div>
-  </div>
 
+  <div class="hero-formations">
+    
+    <div class="hero-card garrison">
+      <h4>🛡️ Optimal Garrison Joiners</h4>
+      <ul class="hero-list">
+        <li>
+          <img src="https://i.imghippo.com/files/kA4320nVQ.webp" alt="Gordon" class="hero-img">
+          <span><strong>2× Gordon</strong> (DefenseUp +25% each)</span>
+        </li>
+        <li>
+          <img src="https://i.imghippo.com/files/EApn2051oyY.webp" alt="Fahd" class="hero-img">
+          <span><strong>1× Fahd</strong> (OppDamageDown +20%)</span>
+        </li>
+        <li>
+          <img src="https://i.imghippo.com/files/naRe7519o.webp" alt="Howard" class="hero-img">
+          <span><strong>1× Howard</strong> (DefenseUp +20%)</span>
+        </li>
+      </ul>
+      <div class="hero-note">
+        <strong>Why this works:</strong> This combination gives you 1.8× DefenseUp AND 1.2× OppDamageDown. Gordon (ID:113) and Howard (ID:111) stack multiplicatively!
+      </div>
+    </div>
+
+    <div class="hero-card attack">
+      <h4>⚔️ Optimal Attack Joiners</h4>
+      <ul class="hero-list">
+        <li>
+          <img src="https://i.imghippo.com/files/IS2459KVc.webp" alt="Chenko" class="hero-img">
+          <span><strong>2× Chenko</strong> (DamageUp +25% each, ID:101)</span>
+        </li>
+        <li>
+          <img src="https://i.imghippo.com/files/CaXt8360Hos.webp" alt="Amane" class="hero-img">
+          <span><strong>2× Amane</strong> (DamageUp +25% each, ID:102)</span>
+        </li>
+      </ul>
+      <div class="hero-note">
+        <strong>Why mix them?</strong> Chenko and Amane have DIFFERENT identifiers (101 vs 102), so they multiply for 2.25× total damage!
+      </div>
+    </div>
+
+    <div class="hero-card special">
+      <h4>📊 Hero Effect Identifiers</h4>
+      <div style="padding: 10px; font-size: 14px; line-height: 1.8;">
+        <strong style="color: #ff6b6b;">⚔️ DamageUp (Attack):</strong><br>
+        • Chenko, Amadeus, Yeonwoo: <span style="color: #4ecdc4;">ID 101</span><br>
+        • Amane, Margot, Hilde: <span style="color: #4ecdc4;">ID 102</span><br>
+        <br>
+        <strong style="color: #4ecdc4;">🛡️ DefenseUp:</strong><br>
+        • Howard, Quinn: <span style="color: #4ecdc4;">ID 111</span><br>
+        • Saul, Hilde: <span style="color: #4ecdc4;">ID 112</span><br>
+        • Gordon, Saul: <span style="color: #4ecdc4;">ID 113</span><br>
+      </div>
+    </div>
+  </div>
+</div>
 
 <h2>⚔️ Balanced Team Formations</h2>
 
@@ -186,7 +314,7 @@
   // Helper function to parse power (e.g., "213.2M" -> 213200000)
   function parsePower(powerStr) {
     if (typeof powerStr !== 'string') return 0;
-    const value = parseFloat(powerStr.replace('M', '').replace(',', '')); // Added replace for commas just in case
+    const value = parseFloat(powerStr.replace('M', '').replace(',', ''));
     return isNaN(value) ? 0 : value * 1000000;
   }
 
@@ -196,13 +324,12 @@
     return powerInMillions.toFixed(1).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + 'M';
   }
 
-  // Function to dynamically generate the Player Rankings list (FIXED)
+  // Function to dynamically generate the Player Rankings list
   function renderPlayerLists(playersData) {
     const levelIcons = {
       '30': "🔥", '29': "⚔️", '28': "🛡️", '27': "🏰", '26': "🧱"
     };
 
-    // Keys are strings '30', '29', etc. Sort them numerically descending.
     const sortedLevels = Object.keys(playersData).sort((a, b) => parseInt(b) - parseInt(a));
 
     sortedLevels.forEach(level => {
@@ -221,7 +348,7 @@
     });
   }
 
-  // Function to dynamically generate the Team Formations (FIXED)
+  // Function to dynamically generate the Team Formations
   function renderTeams(scenarioData, containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = '';
@@ -239,12 +366,10 @@
 
       team.players.forEach(player => {
         totalPower += parsePower(player.power);
-        // Use the color attribute for the leader name for better visibility
         const leaderStyle = player.isLeader ? `style="color: #${team.color}; font-weight: bold;"` : '';
         listItems += `<li ${leaderStyle}>${player.name} – ${player.power}</li>`;
       });
 
-      // Simple, robust HTML generation using helper classes for background colors
       const teamCard = `
         <div class="team" style="border-color: #${team.color};">
           <h4 class="color-${team.color}">${team.name}</h4>
@@ -260,26 +385,20 @@
   // Main function to load all data
   async function loadDataAndRender() {
     try {
-      // Fetch the JSON data file
       const response = await fetch('players_data.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
 
-      // 1. Render Player Rankings List (L30-L26)
       renderPlayerLists(data.all_players_by_level);
-
-      // 2. Render Team Scenarios (Both, but only one is visible)
       renderTeams(data.scenarios.with_irish, 'teamsContainerWith');
       renderTeams(data.scenarios.without_irish, 'teamsContainerWithout');
 
-      // 3. Ensure the initial scenario is visible and button is active
       toggleScenario('with_irish');
 
     } catch (error) {
       console.error('CRITICAL ERROR loading data:', error);
-      // Display a clear error message to the user
       const errorHTML = '<p style="color:#ff6b6b; text-align:center; font-size:16px;">⚠️ خطأ فادح في تحميل البيانات. يرجى التأكد من وجود ملف players_data.json في نفس المجلد.</p>';
       document.getElementById('playerRankingsContainer').innerHTML = errorHTML;
       document.getElementById('teamsContainerWith').innerHTML = errorHTML;
@@ -287,30 +406,25 @@
     }
   }
 
-  // Function for the toggle buttons (Fixed)
+  // Function for the toggle buttons
   function toggleScenario(scenarioId) {
-    // Hide all scenarios
     document.getElementById('with_irish').classList.remove('active');
     document.getElementById('without_irish').classList.remove('active');
     
-    // Deactivate all buttons
     document.getElementById('btn_with_irish').classList.remove('active');
     document.getElementById('btn_without_irish').classList.remove('active');
     
-    // Show the selected scenario
     const scenarioElement = document.getElementById(scenarioId);
     if(scenarioElement) {
         scenarioElement.classList.add('active');
     }
     
-    // Activate the corresponding button
     const buttonElement = document.getElementById(`btn_${scenarioId}`);
     if(buttonElement) {
         buttonElement.classList.add('active');
     }
   }
 
-  // Start the loading process when the window finishes loading
   window.onload = loadDataAndRender;
 
 </script>
