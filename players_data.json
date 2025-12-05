@@ -1,0 +1,117 @@
+{
+  "all_players_by_level": {
+    "30": [
+      {"name": "Irish Rogue", "power": "213.2M", "isLeader": true},
+      {"name": "jay", "power": "84.7M", "isLeader": true},
+      {"name": "ROGUE VLAD", "power": "79.7M", "isLeader": true},
+      {"name": "Moloki", "power": "70.8M", "isLeader": true},
+      {"name": "MECHINATOR", "power": "61.3M", "isLeader": true},
+      {"name": "IMPERIAL ASSYRIA", "power": "55.5M", "isLeader": true},
+      {"name": "KOF_Jinbe", "power": "53.6M"},
+      {"name": "Crixus", "power": "53.3M"},
+      {"name": "KnallieB", "power": "47M"},
+      {"name": "Griffith", "power": "45.3M"},
+      {"name": "Fox", "power": "43.9M"},
+      {"name": "Pwhkki", "power": "42.1M"},
+      {"name": "azrael", "power": "38.9M"}
+    ],
+    "29": [
+      {"name": "Eldrige", "power": "46.3M"}
+    ],
+    "28": [
+      {"name": "Gatot kaca", "power": "50.8M"},
+      {"name": "Oddball_k", "power": "44.7M"},
+      {"name": "P_25 Bam", "power": "44.3M"},
+      {"name": "Lalna", "power": "40.7M"},
+      {"name": "Savigny", "power": "40.7M"},
+      {"name": "KingS", "power": "40.9M"},
+      {"name": "도치모찌", "power": "40.8M"},
+      {"name": "Daenerys7", "power": "40.5M"},
+      {"name": "MoleMole", "power": "40.5M"},
+      {"name": "Boa Hancock", "power": "38.9M"},
+      {"name": "La Buena Piedra", "power": "38.9M"},
+      {"name": "Imaginary", "power": "38.7M"},
+      {"name": "LOOKMe", "power": "38.2M"},
+      {"name": "Hyperion", "power": "36.6M"},
+      {"name": "SANSAR SALVO", "power": "35.9M"},
+      {"name": "Sokolos", "power": "34.8M"},
+      {"name": "AS_¥¥¥", "power": "29.2M"}
+    ],
+    "27": [
+      {"name": "TDavis", "power": "44.4M"},
+      {"name": "Urza Vectivus", "power": "44.3M"},
+      {"name": "Fuhrer", "power": "40.4M"},
+      {"name": "La Buena Piedra (2)", "power": "38.9M"},
+      {"name": "Chef", "power": "36M"},
+      {"name": "khoi", "power": "35.4M"},
+      {"name": "RAWAN", "power": "35.1M"},
+      {"name": "Maro", "power": "34.7M"},
+      {"name": "godfather 91", "power": "32.8M"},
+      {"name": "BreyH2O", "power": "32M"},
+      {"name": "Medo", "power": "31.7M"},
+      {"name": "KingK", "power": "31.7M"},
+      {"name": "Goldie", "power": "31.3M"},
+      {"name": "Black Yak", "power": "31.1M"},
+      {"name": "Killer Chaos", "power": "30.8M"},
+      {"name": "BAKİ", "power": "30.4M"},
+      {"name": "Trevan", "power": "29.8M"}
+    ],
+    "26": [
+      {"name": "Bozkurt", "power": "37.3M"},
+      {"name": "shmoe", "power": "36.3M"},
+      {"name": "amirnation79", "power": "35.3M"},
+      {"name": "My City", "power": "35.3M"},
+      {"name": "MONKEY D DRAGON", "power": "34.2M"},
+      {"name": "Winiarek225", "power": "31.5M"},
+      {"name": "Premeet", "power": "31.5M"},
+      {"name": "Dark D Coder", "power": "30.7M"},
+      {"name": "AI 6,4", "power": "30.1M"},
+      {"name": "Lord Kevi", "power": "30M"},
+      {"name": "Queenland", "power": "27.8M"},
+      {"name": "Aylla", "power": "26.1M"}
+    ]
+  },
+  
+  "scenarios": {
+    "with_irish": {
+      "name": "🔥 With Irish Rogue",
+      "teams": [
+        {"name": "🔴 Team Alpha (The Juggernaut)", "color": "ff6b6b", "players": [
+          {"name": "Irish Rogue", "power": "213.2M", "isLeader": true}, {"name": "BreyH2O", "power": "32M"}, {"name": "Medo", "power": "31.7M"}, {"name": "KingK", "power": "31.7M"}, {"name": "Goldie", "power": "31.3M"}, {"name": "Black Yak", "power": "31.1M"}, {"name": "Killer Chaos", "power": "30.8M"}, {"name": "BAKİ", "power": "30.4M"}, {"name": "Trevan", "power": "29.8M"}, {"name": "AS_¥¥¥", "power": "29.2M"}, {"name": "Queenland", "power": "27.8M"}, {"name": "Aylla", "power": "26.1M"}
+        ]},
+        {"name": "🔵 Team Bravo", "color": "4ecdc4", "players": [
+          {"name": "jay", "power": "84.7M", "isLeader": true}, {"name": "IMPERIAL ASSYRIA", "power": "55.5M"}, {"name": "Gatot kaca", "power": "50.8M"}, {"name": "Eldrige", "power": "46.3M"}, {"name": "Oddball_k", "power": "44.7M"}, {"name": "P_25 Bam", "power": "44.3M"}, {"name": "Fuhrer", "power": "40.4M"}, {"name": "La Buena Piedra", "power": "38.9M"}, {"name": "Chef", "power": "36M"}, {"name": "Bozkurt", "power": "37.3M"}, {"name": "Dark D Coder", "power": "30.7M"}
+        ]},
+        {"name": "🟡 Team Charlie", "color": "ffe66d", "players": [
+          {"name": "ROGUE VLAD", "power": "79.7M", "isLeader": true}, {"name": "KOF_Jinbe", "power": "53.6M"}, {"name": "KnallieB", "power": "47M"}, {"name": "TDavis", "power": "44.4M"}, {"name": "Urza Vectivus", "power": "44.3M"}, {"name": "Fox", "power": "43.9M"}, {"name": "Lalna", "power": "40.7M"}, {"name": "Boa Hancock", "power": "38.9M"}, {"name": "khoi", "power": "35.4M"}, {"name": "shmoe", "power": "36.3M"}, {"name": "AI 6,4", "power": "30.1M"}
+        ]},
+        {"name": "🟢 Team Delta", "color": "a8e6cf", "players": [
+          {"name": "Moloki", "power": "70.8M", "isLeader": true}, {"name": "Crixus", "power": "53.3M"}, {"name": "Griffith", "power": "45.3M"}, {"name": "Pwhkki", "power": "42.1M"}, {"name": "Savigny", "power": "40.7M"}, {"name": "KingS", "power": "40.9M"}, {"name": "Daenerys7", "power": "40.5M"}, {"name": "Imaginary", "power": "38.7M"}, {"name": "RAWAN", "power": "35.1M"}, {"name": "amirnation79", "power": "35.3M"}, {"name": "Lord Kevi", "power": "30M"}
+        ]},
+        {"name": "🟣 Team Echo", "color": "c7ceea", "players": [
+          {"name": "MECHINATOR", "power": "61.3M", "isLeader": true}, {"name": "azrael", "power": "38.9M"}, {"name": "도치모찌", "power": "40.8M"}, {"name": "MoleMole", "power": "40.5M"}, {"name": "La Buena Piedra (2)", "power": "38.9M"}, {"name": "LOOKMe", "power": "38.2M"}, {"name": "Hyperion", "power": "36.6M"}, {"name": "SANSAR SALVO", "power": "35.9M"}, {"name": "Sokolos", "power": "34.8M"}, {"name": "Maro", "power": "34.7M"}, {"name": "godfather 91", "power": "32.8M"}, {"name": "My City", "power": "35.3M"}, {"name": "Winiarek225", "power": "31.5M"}
+        ]}
+      ]
+    },
+    "without_irish": {
+      "name": "⚡ Without Irish Rogue",
+      "teams": [
+        {"name": "🔴 Team Alpha", "color": "ff6b6b", "players": [
+          {"name": "jay", "power": "84.7M", "isLeader": true}, {"name": "KnallieB", "power": "47M"}, {"name": "Fox", "power": "43.9M"}, {"name": "도치모찌", "power": "40.8M"}, {"name": "La Buena Piedra", "power": "38.9M"}, {"name": "Hyperion", "power": "36.6M"}, {"name": "RAWAN", "power": "35.1M"}, {"name": "Bozkurt", "power": "37.3M"}, {"name": "BreyH2O", "power": "32M"}, {"name": "BAKİ", "power": "30.4M"}, {"name": "Queenland", "power": "27.8M"}
+        ]},
+        {"name": "🔵 Team Bravo", "color": "4ecdc4", "players": [
+          {"name": "ROGUE VLAD", "power": "79.7M", "isLeader": true}, {"name": "Eldrige", "power": "46.3M"}, {"name": "Urza Vectivus", "power": "44.3M"}, {"name": "KingS", "power": "40.9M"}, {"name": "Boa Hancock", "power": "38.9M"}, {"name": "SANSAR SALVO", "power": "35.9M"}, {"name": "khoi", "power": "35.4M"}, {"name": "shmoe", "power": "36.3M"}, {"name": "Medo", "power": "31.7M"}, {"name": "Killer Chaos", "power": "30.8M"}, {"name": "Aylla", "power": "26.1M"}
+        ]},
+        {"name": "🟡 Team Charlie", "color": "ffe66d", "players": [
+          {"name": "Moloki", "power": "70.8M", "isLeader": true}, {"name": "Gatot kaca", "power": "50.8M"}, {"name": "P_25 Bam", "power": "44.3M"}, {"name": "Lalna", "power": "40.7M"}, {"name": "MoleMole", "power": "40.5M"}, {"name": "Chef", "power": "36M"}, {"name": "Maro", "power": "34.7M"}, {"name": "amirnation79", "power": "35.3M"}, {"name": "godfather 91", "power": "32.8M"}, {"name": "Black Yak", "power": "31.1M"}, {"name": "Premeet", "power": "31.5M"}
+        ]},
+        {"name": "🟢 Team Delta", "color": "a8e6cf", "players": [
+          {"name": "MECHINATOR", "power": "61.3M", "isLeader": true}, {"name": "Crixus", "power": "53.3M"}, {"name": "Griffith", "power": "45.3M"}, {"name": "TDavis", "power": "44.4M"}, {"name": "Savigny", "power": "40.7M"}, {"name": "Imaginary", "power": "38.7M"}, {"name": "Sokolos", "power": "34.8M"}, {"name": "My City", "power": "35.3M"}, {"name": "Winiarek225", "power": "31.5M"}, {"name": "Goldie", "power": "31.3M"}, {"name": "Trevan", "power": "29.8M"}
+        ]},
+        {"name": "🟣 Team Echo", "color": "c7ceea", "players": [
+          {"name": "IMPERIAL ASSYRIA", "power": "55.5M", "isLeader": true}, {"name": "KOF_Jinbe", "power": "53.6M"}, {"name": "Oddball_k", "power": "44.7M"}, {"name": "Pwhkki", "power": "42.1M"}, {"name": "Fuhrer", "power": "40.4M"}, {"name": "Daenerys7", "power": "40.5M"}, {"name": "azrael", "power": "38.9M"}, {"name": "LOOKMe", "power": "38.2M"}, {"name": "MONKEY D DRAGON", "power": "34.2M"}, {"name": "KingK", "power": "31.7M"}, {"name": "Dark D Coder", "power": "30.7M"}, {"name": "AS_¥¥¥", "power": "29.2M"}
+        ]}
+      ]
+    }
+  }
+}
